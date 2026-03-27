@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <title>Cafe Darkhan</title>
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">☕ Cafe Darkhan</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#menu-section">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prices">Prices</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. CAROUSEL -->
+  <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img style="aspect-ratio:16/9; object-fit:cover" height="600" src="https://tchibo.us/cdn/shop/articles/cappucino.jpg?v=1690196460&width=1440" class="d-block w-100" alt="photo">
+        <div class="carousel-caption"><h5>Cappuccino</h5></div>
+      </div>
+
+      <div class="carousel-item">
+        <img style="aspect-ratio:16/9; object-fit:cover" height="600" src="https://www.australianeggs.org.au/assets/recipes/Egg-trout-croissant-0192-prv__ScaleWidthWzEyMDBd.jpg" class="d-block w-100" alt="photo">
+        <div class="carousel-caption"><h5>Breakfast</h5></div>
+      </div>
+
+      <div class="carousel-item">
+        <img style="aspect-ratio:16/9; object-fit:cover" height="600" src="https://www.timeoutdubai.com/cloud/timeoutdubai/2023/05/18/Business-Lunch_Hutong_2023-1024x683.jpg" class="d-block w-100" alt="photo">
+        <div class="carousel-caption"><h5>Business lunch</h5></div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#menuCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#menuCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- 3. HERO -->
+  <section class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">☕ Cafe Darkhan</h1>
+      <p class="lead text-light mb-4">A cozy place in the heart of the city</p>
+      <a href="#menu-section" class="btn btn-warning btn-lg px-5">See our menu</a>
+    </div>
+  </section>
+
+  <!-- ALERT -->
+  <div class="container mt-4">
+    <div class="alert alert-warning alert-dismissible fade show">
+      🎉 <strong>Special offer!</strong> Every Tuesday — free coffee with any breakfast order.
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  </div>
+
+  <!-- 4. MENU CARDS -->
+  <section class="py-5 bg-light" id="menu-section">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Our Menu</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://tchibo.us/cdn/shop/articles/cappucino.jpg?v=1690196460&width=1440"
+                 class="card-img-top object-fit-cover" style="height:180px" alt="Cappuccino">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Cappuccino</h5>
+                <span class="badge bg-warning text-dark">25 000 sum</span>
+              </div>
+              <p class="card-text text-muted">Soft coffee with milk foam. Served hot any time of day.</p>
+              <button class="btn btn-outline-dark btn-sm w-100 mt-2 btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-warning">
+            <img src="https://www.australianeggs.org.au/assets/recipes/Egg-trout-croissant-0192-prv__ScaleWidthWzEyMDBd.jpg"
+                 class="card-img-top object-fit-cover" style="height:180px" alt="Breakfast">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Breakfast</h5>
+                <span class="badge bg-success">45 000 sum</span>
+              </div>
+              <span class="badge bg-danger mb-2">Hit of the day</span>
+              <p class="card-text text-muted">Omelette, toast with butter, fresh juice. Until 12:00 only.</p>
+              <button class="btn btn-warning btn-sm w-100 btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2023/05/18/Business-Lunch_Hutong_2023-1024x683.jpg"
+                 class="card-img-top object-fit-cover" style="height:180px" alt="Business lunch">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Business lunch</h5>
+                <span class="badge bg-info">65 000 sum</span>
+              </div>
+              <span class="badge bg-secondary mb-2">12:00 – 15:00</span>
+              <p class="card-text text-muted">Soup, main dish, side dish, and a drink. Filling and tasty every day.</p>
+              <button class="btn btn-light btn-sm w-100 btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PRICE TABLE -->
+  <section class="py-5" id="prices">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">All Prices</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+          <thead>
+            <tr class="table-dark">
+              <th>Dish</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cappuccino</td>
+              <td>Drinks</td>
+              <td>25 000 sum</td>
+              <td><span class="badge bg-success">In stock</span></td>
+            </tr>
+            <tr>
+              <td>Green tea</td>
+              <td>Drinks</td>
+              <td>15 000 sum</td>
+              <td><span class="badge bg-success">In stock</span></td>
+            </tr>
+            <tr>
+              <td>Breakfast</td>
+              <td>Food</td>
+              <td>45 000 sum</td>
+              <td><span class="badge bg-danger">Until 12:00</span></td>
+            </tr>
+            <tr class="table-warning">
+              <td>Business lunch</td>
+              <td>Food</td>
+              <td>65 000 sum</td>
+              <td><span class="badge bg-warning text-dark">Hit!</span></td>
+            </tr>
+            <tr>
+              <td>Cheesecake</td>
+              <td>Desserts</td>
+              <td>35 000 sum</td>
+              <td><span class="badge bg-secondary">Seasonal</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="py-5 bg-light" id="about">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">About Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center">
+          <p class="text-muted mb-3">Cafe Darkhan opened in 2018 and became a favourite place for locals. We cook from fresh ingredients and welcome every guest with a smile.</p>
+          <p class="text-muted">Our team are professionals with heart. Come once — you will come back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="py-5 bg-light" id="menu-section">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Reviews</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://tchibo.us/cdn/shop/articles/cappucino.jpg?v=1690196460&width=1440"
+                 class="card-img-top object-fit-cover" style="height:180px" alt="Cappuccino">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Nurislam</h5>
+                <span class="text-warning">★★★★★ </span>
+              </div>
+              <p class="card-text text-muted">ZOR!</p>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-warning">
+            <img src="https://www.australianeggs.org.au/assets/recipes/Egg-trout-croissant-0192-prv__ScaleWidthWzEyMDBd.jpg"
+                 class="card-img-top object-fit-cover" style="height:180px" alt="Breakfast">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Breakfast</h5>
+                <span class="badge bg-success">45 000 sum</span>
+              </div>
+              <span class="badge bg-danger mb-2">Hit of the day</span>
+              <p class="card-text text-muted">Omelette, toast with butter, fresh juice. Until 12:00 only.</p>
+              <button class="btn btn-warning btn-sm w-100 btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2023/05/18/Business-Lunch_Hutong_2023-1024x683.jpg"
+                 class="card-img-top object-fit-cover" style="height:180px" alt="Business lunch">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Business lunch</h5>
+                <span class="badge bg-info">65 000 sum</span>
+              </div>
+              <span class="badge bg-secondary mb-2">12:00 – 15:00</span>
+              <p class="card-text text-muted">Soup, main dish, side dish, and a drink. Filling and tasty every day.</p>
+              <button class="btn btn-light btn-sm w-100 btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 8. FOOTER -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1 fw-bold">☕ Cafe Darkhan</p>
+      <p class="text-white mb-1">Takhtakupyr st. ABC</p>
+      <p class="text-white mb-0">Working hours: 8:00 — 22:00</p>
+    </div>
+  </footer>
+
+  <!-- 7. TOAST -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+    <div id="orderToast" class="toast align-items-center text-white bg-success">
+      <div class="d-flex">
+        <div class="toast-body">✅ Order accepted! Wait 15 minutes.</div>
+        <button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.btn-order').forEach(btn => {
+      btn.addEventListener('click', () => {
+        new bootstrap.Toast(document.getElementById('orderToast')).show();
+      });
+    });
+  </script>
+
+</body>
+</html>
